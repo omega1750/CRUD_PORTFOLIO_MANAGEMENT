@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio CRUD App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <h2>Portfolio Management</h2>
+
+  <form id="portfolioForm">
+    <input type="hidden" id="portfolioId">
+
+    <input type="text" id="owner_name" name="owner_name" placeholder="Owner Name" required>
+    <input type="text" id="project_title" name="project_title" placeholder="Project Title">
+    <input type="text" id="status" name="status" placeholder="Status (Planned/In Progress/Completed)">
+    <input type="date" id="started_date" name="started_date" placeholder="Started Date">
+    <input type="date" id="completed_date" name="completed_date" placeholder="Completed Date">
+    <textarea id="description" name="description" placeholder="Description"></textarea>
+    
+    <button type="submit">Save</button>
+  </form>
+
+  <table id="portfolioTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Owner Name</th>
+        <th>Project Title</th>
+        <th>Status</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</body>
+</html>
